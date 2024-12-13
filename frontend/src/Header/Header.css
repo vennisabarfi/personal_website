@@ -1,0 +1,41 @@
+
+/* header animation */
+
+.header-animation{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
+    font-size: 5em;
+}
+
+.header-animation h1::before{
+    content: "Builder";
+    animation: animate infinite 10s;
+    padding-left: 10px;
+
+}
+
+@keyframes animate {
+
+    0% {
+        content: "Hi, I'm Vennisa";
+    }
+
+    50% {
+        content: "Software Engineer";
+    }
+
+    75% {
+        content: "Creative";
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-animation{
+        font-size: 3em;
+    }
+
+
+}
