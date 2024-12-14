@@ -1,0 +1,109 @@
+.about-section{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 80%;
+}
+
+.summary{
+    margin-top: 10%;
+}
+
+
+
+.summary p{
+    margin-top: 2%;
+}
+
+.experience h2{
+    margin-top: 5%;
+    
+}
+
+.experience h1{
+    margin-bottom: 1%;
+}
+
+.experience h3{
+    margin-bottom: 3%;
+}
+
+.freelance-link{
+    margin-top: 2%;
+    margin-left: 45%;
+}
+
+.status{
+    color: green;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.resume-link-desktop a{
+    font-size:1.3em;
+}
+
+.resume-link-desktop {
+    margin-top: 2%;
+    margin-left: -1.5%;
+    margin-bottom: 1%;
+}
+
+.resume-link{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    .about-section{
+        margin-left: 3%;
+        width: 90%;
+    }
+
+    .summary{
+        margin-top: 10%;
+    }
+
+    .summary p{
+        margin-top: 2%;
+    }
+
+    .experience{
+    
+       
+ 
+    }
+    
+    .experience h3{
+        margin-bottom: 5%;
+    }
+    .experience h1{
+        margin-bottom: 1%;
+    }
+    
+    
+    .freelance-link{
+        margin-top: 2%;
+        margin-left: 20%;
+    }
+    
+    .status{
+        color: green;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    .resume-link{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10%;
+    }
+    .resume-link a{
+        font-size: 1.2em;
+       
+    }
+
+}
