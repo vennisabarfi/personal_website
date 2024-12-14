@@ -1,13 +1,6 @@
 import "./About.css";
 import { Button } from "@/components/ui/button"
 import * as icon from "./Constants"; //import icons
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-  } from "@/components/ui/tooltip"
-  
 
 
 
@@ -41,76 +34,6 @@ const resume_link_icon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20
 <path d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
 <path d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
 </svg>  
-
-
-// tech stack mapping
-const Tech=[
-    {
-        "id": 1,
-        "language_icon": icon.python_icon,
-        "name": "python",
-    },
-    {
-        "id": 2,
-        "language_icon": icon.go_icon,
-        "name": "Golang",
-    },
-    {
-        "id": 3,
-        "language_icon": icon.javascript_icon,
-        "name": "JavaScript",
-    },
-    {
-        "id": 4,
-        "language_icon": icon.html_icon,
-        "name": "HTML5",
-    },
-    {
-        "id": 5,
-        "language_icon": icon.css_icon,
-        "name": "CSS",
-    },
-    
-    {
-        "id": 6,
-        "framework_icon": icon.react_icon,
-        "name": "React",
-    },
-    {
-        "id": 7,
-        "framework_icon": icon.gin_icon,
-        "name": "Gin",
-    },
- 
-    {
-        "id": 8,
-        "framework_icon": icon.flask_icon,
-        "name": "Flask",
-    }, 
-    {
-        "id": 9,
-        "framework_icon": icon.tailwind_icon,
-        "name": "TailwindCSS",
-    }, 
-
-    {
-        "id": 10,
-        "tool_icon": icon.postgresql_icon,
-        "name": "PostgreSQL",
-    }, {
-        "id": 11,
-        "tool_icon": icon.googlecloud_icon,
-        "name": "Google Cloud Platform",
-    }, {
-        "id": 12,
-        "tool_icon": icon.git_icon,
-        "name": "Git",
-    },
-
-   
-]
-
-
 
 
     return(
@@ -176,6 +99,7 @@ const Tech=[
 
 
                 {/* Tech Stack */}
+                <div className="tech-section">
                 <div>
                 <h3 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight">Tech Stack</h3>
                 </div>
@@ -183,68 +107,39 @@ const Tech=[
                 {/* languages */}
                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Languages</h4>
                 <div className="tech-icons">
+                    <span className="python-icon">{icon.python_icon}</span>
+                    <span className="go-icon">{icon.go_icon}</span>
+                    <span>{icon.javascript_icon}</span>
+                    <span>{icon.html_icon}</span>
+                    <span>{icon.css_icon}</span>
                     
-                {Tech.map((tech)=>(
-                    <div className="" key={tech.id}> 
-
-             <TooltipProvider>
-             <Tooltip  >
-            <TooltipTrigger  asChild><span>{tech.language_icon}</span></TooltipTrigger>
-              <TooltipContent>
-               <p>{tech.name}</p>
-              </TooltipContent>
-           </Tooltip>
-             </TooltipProvider>
-
-                    </div>
-
-                    
-                ))}
-
                 </div>
+
 
                 
                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Frameworks</h4>
 
                 <div className="tech-icons">
-                    
-                {Tech.map((tech)=>(
-                    <div className="" key={tech.id}> 
-
-             <TooltipProvider>
-             <Tooltip  >
-            <TooltipTrigger  asChild><span>{tech.framework_icon}</span></TooltipTrigger>
-              <TooltipContent>
-               <p>{tech.name}</p>
-              </TooltipContent>
-           </Tooltip>
-             </TooltipProvider>
-
-                    </div>
-
-                    
-                ))}
-
+                    <span>{icon.react_icon}</span>
+                    <span>{icon.gin_icon}</span>
+                    <span>{icon.flask_icon}</span>
+                    <span>{icon.tailwind_icon}</span>
+                     
                 </div>
-
                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
                 Tools
              </h4>
-                <div className="tech-icons">
-                {Tech.map((tech)=>(
-                    <div className="" key={tech.id}> 
-             <TooltipProvider>
-             <Tooltip>
-            <TooltipTrigger asChild>{tech.tool_icon}</TooltipTrigger>
-              <TooltipContent>
-               <p>{tech.name}</p>
-              </TooltipContent>
-           </Tooltip>
-             </TooltipProvider>
-                    </div> 
-                ))}
+             <div className="tech-icons">
+                    <span>{icon.postgresql_icon}</span>
+                    <span>{icon.googlecloud_icon}</span>
+                    <span>{icon.git_icon}</span>
+                    
                 </div>
-               
+             
+
+                </div>
+            
+              
             </div>
 
             

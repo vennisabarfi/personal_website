@@ -54,20 +54,21 @@
 
 
 .tech-icons{
+    margin-left: 20%;
     margin-bottom: 10%;
-    scale: 0.5;
+    scale: 0.9;
     display: grid;
-    gap: 40%;
-    grid-template-columns: repeat(3, 2fr) repeat(2, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 20%;
-grid-row-gap: 3%;
+   
+    grid-column-gap: 35%;
+    grid-row-gap: 50%;
     
-    /* grid-template-columns: auto auto auto; */
-    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: auto auto auto; 
+    
    
  
 }
+
+
 
 
 
@@ -88,9 +89,7 @@ grid-row-gap: 3%;
     }
 
     .experience{
-       
-       
- 
+       margin-top: 10%;
     }
     
     .experience h3{
@@ -100,11 +99,16 @@ grid-row-gap: 3%;
     .experience h1{
         margin-bottom: 1%;
     }
+
+    .experience h2{
+        margin-bottom: 1%;
+    }
     
     
     .freelance-link{
         margin-top: 2%;
         margin-left: 20%;
+        text-decoration: underline;
     }
     
     .status{
@@ -119,6 +123,8 @@ grid-row-gap: 3%;
         justify-content: center;
         align-items: center;
         margin-right: 10%;
+        margin-left: 7%;
+        text-decoration: underline;
     }
     .resume-link a{
         font-size: 1.2em;
@@ -128,4 +134,20 @@ grid-row-gap: 3%;
         display: none;
     }
 
+    .tech-section{
+        margin-top: 5%;
+    }
+    .tech-section h4{
+        margin-bottom: 3%;
+    }
+
+    .tech-icons{
+        margin-right: 5%;
+        margin-bottom: 10%;
+        scale: 0.9;
+        display: grid;
+        gap: 25%;
+        grid-template-columns: auto auto auto;
+     
+    }
 }

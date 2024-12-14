@@ -17,6 +17,8 @@
 
 }
 
+
+
 @keyframes animate {
 
     0% {
@@ -34,7 +36,13 @@
 
 @media only screen and (max-width: 768px) {
     .header-animation{
-        font-size: 3em;
+        font-size: 2.8em;
+        margin-top: 15%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
 
