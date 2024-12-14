@@ -54,13 +54,24 @@
 
 
 .tech-icons{
-    scale: 0.2;
+    margin-bottom: 10%;
+    scale: 0.5;
     display: grid;
-    gap: 30%;
-    grid-template-columns: auto auto auto;
+    gap: 40%;
+    grid-template-columns: repeat(3, 2fr) repeat(2, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 20%;
+grid-row-gap: 3%;
+    
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns: auto auto auto; */
+   
  
 }
 
+
+
+.noTooltip:hover{pointer-events:fill;}
 @media only screen and (max-width: 768px) {
     
     .about-section{
