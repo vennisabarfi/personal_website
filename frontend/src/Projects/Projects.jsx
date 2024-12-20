@@ -1,14 +1,5 @@
 import "./Projects.css";
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-  } from "@/components/ui/card"
-
-  import website from "./website.jpg";
+import website from "./website.jpg";
 import { python_icon, react_icon } from "@/About/Constants";
 
 export default function Projects(){
@@ -56,29 +47,25 @@ export default function Projects(){
         <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">Freelance Work</h2> 
         </div>
 
-        <div className="freelance-section">
-       
-
+        <div className= "freelance">
         {Freelance.map((freelance)=>(
-                    <div className="experience" key={freelance.id}> 
-                    <Card>
-  <CardHeader>
-    <CardTitle>{freelance.client}</CardTitle>
-    <CardDescription>Card Description</CardDescription>
-  </CardHeader>
-  <CardContent className="thumbnail-description">
-  <img src={freelance.thumbnail}/>
-  <span>{freelance.Description}
+        <div className="experience" key={freelance.id}> 
+        {freelance.client}               
+    <div className="thumbnail-description"> 
+    <div className="thumbnail"> <img src={freelance.thumbnail}/> </div> 
+    <div className="description">
+ 
+    <span>{freelance.Description}</span>
+    <br/>
   <span>{freelance.website_link}</span> 
   <br/>   
   <span>{freelance.github_link}</span>
-  </span>
-  
-  </CardContent>
-  <CardFooter>
     <span>Tools: {freelance.Tools} </span>
-  </CardFooter>
-</Card>
+
+    </div>
+    
+    </div>
+  
 
 
                     </div>
@@ -86,6 +73,8 @@ export default function Projects(){
                     
                 ))}
         </div>
+
+
 
         </>
     );

@@ -9,13 +9,28 @@
 }
 
 .thumbnail-description{
-    display: inline-block;
+    display: flex;
+
+    /* display: inline-block;
     display: flex;
     flex-direction: row;
-
-    width: 80%;
+    width: 80%; */
  
 }
+
+/* fixed so specify width and then description grows to fit this */
+.thumbnail{
+    min-width: 300px;
+    margin-left: 10%;
+}
+
+.description{
+    flex-grow: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
 .thumbnail-description img{
     /* scale: 0.4; */
     height: 200px;
