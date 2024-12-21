@@ -1,5 +1,6 @@
 .freelance-header{
     margin-top: 10%;
+    margin-left: 5%;
 }
 
 .experience h3{
@@ -15,6 +16,7 @@
 /* fixed so specify width and then description grows to fit this */
 .thumbnail-description{
     display: flex;
+    margin-left: 20%;
 }
 .thumbnail{
     min-width: 300px;
@@ -26,6 +28,10 @@
     margin-left: 5%;
     margin-right: 6%;
 
+}
+
+.free-description{
+    margin-right: 40%;
 }
 
 .freelance{
@@ -71,31 +77,62 @@
 }
 
 @media only screen and (max-width: 768px) {
+        
+    .freelance{
 
+    }
     .freelance-header{
         margin-left: 5%;
     }
     .freelance-section{
-        width: 85%;
+        width: 90%;
         margin-left: 8%;
     
     }
 
+    .experience h3{
+        
+        padding-left: 7%;
+       
+
+    }
+
     
 .thumbnail-description{
-    display: inline;
+    display: inline-block;
+    margin-left: 3%;
+}
+
+.free-description{
+    margin-right: 10%;
 }
 
     .thumbnail{
-        max-width: 30%;
-        margin-left: 10%;
+        max-width: 40%;
+        margin-left: 8%;
     }
     
     .description{
         flex-grow: 1;
         
-        margin-left: 5%;
+        /* margin-left: 5%; */
         margin-right: 6%;
     
+    }
+
+    .links{
+ 
+        margin-bottom: -5%;
+        display: flex; 
+    }
+    .free-description{
+        margin-left: 5%;
+        margin-left: 2%;
+    }
+
+    .tools{
+     
+        margin-left: 2%;
+        scale: 1.2;
     }
 }

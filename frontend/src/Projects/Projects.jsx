@@ -30,7 +30,7 @@ export default function Projects(){
             "id": 2,
             "client": "Client Portfolio Page",
             "thumbnail": website,
-            "Description": "Designed a portfolio page to showcase client's skills",
+            "Description": "Designed a portfolio page for a client.",
             "tool_1": react_icon,
             "tool_2": javascript_icon,
             "tool_3":html_icon,
@@ -85,7 +85,7 @@ export default function Projects(){
     <div className="thumbnail"> <img src={freelance.thumbnail}/> </div> 
     <div className="description">
  
-    <span>{freelance.Description}</span>
+    <span className="free-description">{freelance.Description}</span>
     <br/>
   <div className="links">
     <Button className="website-link" variant="link"><a href={freelance.website_link}>View Website</a>{resume_link_icon}</Button> 

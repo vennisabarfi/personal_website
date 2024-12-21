@@ -72,7 +72,7 @@
 
 
 
-.noTooltip:hover{pointer-events:fill;}
+
 @media only screen and (max-width: 768px) {
     
     .about-section{
@@ -95,9 +95,17 @@
     .experience h3{
         
         margin-bottom: 5%;
+        margin-left: 1%;
+        margin-right: -4%;
     }
     .experience h1{
+        margin-left: 1%;
         margin-bottom: 1%;
+        
+    }
+
+    .experience p{
+        margin-left: 1%;
     }
 
     .experience h2{
