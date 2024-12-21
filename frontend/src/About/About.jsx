@@ -24,7 +24,7 @@ export default function About(){
          },
          { "id": 3,
             "Company": "Calvin University",
-            "Role": "Computational Physics Tutor",
+            "Role": "Computational Physics Intern",
             "Date":"May 2022 - December 2022",
             "Description": "Worked with Research team to model complex atomic and molecular behaviors.", 
          }
