@@ -6,19 +6,16 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Projects from './Projects/Projects'
 import About from './About/About'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-
+import DarkMode from './DarkMode'
 function App() {
 
   
 
   return ( 
     <>
+
     <body className='main-body'>
-
-   
-
-
+    <DarkMode />
     <Header/>
 
    
@@ -55,6 +52,8 @@ function App() {
           
         </Routes>
       </BrowserRouter>
+
+
     
 </body>
 
