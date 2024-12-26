@@ -37,6 +37,8 @@ const resume_link_icon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20
 
 
     return(
+
+
         
         <>
         <div className="about-section">
