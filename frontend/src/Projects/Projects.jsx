@@ -2,6 +2,9 @@ import "./Projects.css";
 import website from "./website.jpg";
 import {css_icon, github_icon, go_icon, html_icon, javascript_icon, postgresql_icon, python_icon, react_icon } from "@/About/Constants";
 import { Button } from "@/components/ui/button";
+import cincypages from "./cincypages.jpg";
+import darbypages from "./darbypages.jpg";
+
 export default function Projects(){
 
 
@@ -13,7 +16,7 @@ export default function Projects(){
         {
             "id": 1,
             "client": "Non Profit Client",
-            "thumbnail": website,
+            "thumbnail": cincypages,
             "Description": "Cincy Gay Pages is a nonprofit directory to find LGBT+ resources in Cincinnati.",
             "Tools":"React, Golang, JavaScript, HTML, CSS",
             "tool_1": react_icon,
@@ -29,7 +32,7 @@ export default function Projects(){
         {
             "id": 2,
             "client": "Client Portfolio Website",
-            "thumbnail": website,
+            "thumbnail": darbypages,
             "Description": "Designed and built a portfolio website for a client.",
             "tool_1": react_icon,
             "tool_2": javascript_icon,
@@ -118,6 +121,8 @@ export default function Projects(){
         <>
 
         <div className="project-body">
+
+    
         
         {/* freelance section */}
         <div className="freelance-header">

@@ -1,9 +1,9 @@
 import "./Contact.css";
-import { email_icon, github_icon, linkedin_icon} from "@/About/Constants";
+import { email_icon, github_icon, linkedin_icon, VENNISA_EMAIL, VENNISA_GITHUB, VENNISA_LINKEDIN} from "@/About/Constants";
 import { Button } from "@/components/ui/button";
 import profile_picture from "./profile-picture.jpg";
 import Form from "./Form";
-
+import { Separator } from "@/components/ui/separator";
 
 export default  function Contact(){
 
@@ -12,7 +12,7 @@ const Contact = [
     {
         "id": "1",
         "handle": "Vennisa Barfi",
-        "link": "https://www.linkedin.com/in/vennisa-owusu-barfi-95155216b/",
+        "link": VENNISA_LINKEDIN,
         "icon": linkedin_icon,
 
     },
@@ -20,7 +20,7 @@ const Contact = [
     {
         "id": "2",
         "handle": "vennisabarfi",
-        "link": "https://github.com/vennisabarfi",
+        "link": VENNISA_GITHUB,
         "icon": github_icon,
 
     },
@@ -28,15 +28,19 @@ const Contact = [
     {
         "id": "3",
         "handle": "Email Me",
-        "link": "vennisabarfi@gmail.com",
         "icon": email_icon,
+        "email": VENNISA_EMAIL,
 
-    },  
+    },
+
 
 ]
 
     return(
         <>
+        <div className="contact-body">
+
+     
 
 <div className="contact-section">
     
@@ -54,29 +58,37 @@ const Contact = [
             {Contact.map((contact)=>(
                     <div className="experience" key={contact.id}> 
                     
-                    <Button variant="link"><a href={contact.link} target="_blank">{contact.handle} </a>{contact.icon}</Button>
+                    {contact.link && <Button variant="link"><a href={contact.link} target="_blank">{contact.handle} </a>{contact.icon}</Button>}
+                    {contact.email && <Button variant="link"><a href={`mailto: ${contact.email}`} target="_blank">Email Me </a>{email_icon}</Button>}
+                   
                     
-
-
                     </div>
 
                     
                 ))}
-
+               
+                
        
     </div>
     </div>
 
+<br/>
 
     <div className="freelance-contact">
     <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
-      Do you have an Idea you want to bring to life? Let&apos;s Connect.
+      Have an Idea you want to bring to life? Let&apos;s Connect.
     </h3>
+    <Separator className="separator"/>
+    
 
-                <Form/>
+            <div className="form">
+            <Form/>
+            </div>
+              
 
     </div>
 
+</div>
 </div>
 
         

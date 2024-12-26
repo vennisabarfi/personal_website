@@ -5,8 +5,7 @@ import Contact from './Contact/Contact'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Projects from './Projects/Projects'
 import About from './About/About'
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
@@ -23,7 +22,7 @@ function App() {
     <Header/>
 
    
-  
+
 
 
 <Tabs defaultValue="about">
@@ -36,17 +35,30 @@ function App() {
    <TabsContent value="about"><About/></TabsContent>
    </div>
 
-      <div id="#projects">
+      <div id="projects">
       <TabsContent value="projects"><Projects/></TabsContent>
       </div>
+
+      <div id="contact">
+      <TabsContent value="contact"><Contact/></TabsContent>
+      </div>
   
-  <TabsContent value="contact"><Contact/></TabsContent>
+  
  
   
 </Tabs>
 
+<BrowserRouter>
+        <Routes>
+          <Route path="/project" element={<Projects />} />
+     
+          
+        </Routes>
+      </BrowserRouter>
     
 </body>
+
+
   
     </>
   )
