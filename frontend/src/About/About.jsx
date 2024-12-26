@@ -54,7 +54,7 @@ const resume_link_icon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20
             
             {/* work on integrating font style  */}
             <br/>
-            <Button className="freelance-link" variant="link"><a href="/projects">View Freelance Work Here</a>{resume_link_icon}</Button>
+            <Button className="freelance-link" variant="link"><a href="#project">View Freelance Work Here</a>{resume_link_icon}</Button>
                 </p>
                
         
@@ -107,11 +107,11 @@ const resume_link_icon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20
                 {/* languages */}
                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Languages</h4>
                 <div className="tech-icons">
-                    <span className="python-icon">{icon.python_icon}</span>
-                    <span className="go-icon">{icon.go_icon}</span>
-                    <span>{icon.javascript_icon}</span>
-                    <span>{icon.html_icon}</span>
-                    <span>{icon.css_icon}</span>
+                    <span className="python-icon">{icon.python_icon}<Button variant="ghost">Python</Button></span>
+                    <span className="go-icon">{icon.go_icon}<Button variant="ghost">Golang</Button></span>
+                    <span>{icon.javascript_icon}<Button variant="ghost">JavaScript</Button></span>
+                    <span>{icon.html_icon}<Button variant="ghost">HTML5</Button></span>
+                    <span>{icon.css_icon}<Button variant="ghost">CSS3</Button></span>
                     
                 </div>
 
@@ -120,19 +120,19 @@ const resume_link_icon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20
                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Frameworks</h4>
 
                 <div className="tech-icons">
-                    <span>{icon.react_icon}</span>
-                    <span>{icon.gin_icon}</span>
-                    <span>{icon.flask_icon}</span>
-                    <span>{icon.tailwind_icon}</span>
+                    <span>{icon.react_icon}<Button variant="ghost">React JS</Button></span>
+                    <span>{icon.gin_icon}<Button variant="ghost">Gin(Golang)</Button></span>
+                    <span>{icon.flask_icon}<Button variant="ghost">Flask(Python)</Button></span>
+                    <span>{icon.tailwind_icon}<Button variant="ghost">TailwindCSS</Button></span>
                      
                 </div>
                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
                 Tools
              </h4>
              <div className="tech-icons">
-                    <span>{icon.postgresql_icon}</span>
-                    <span>{icon.googlecloud_icon}</span>
-                    <span>{icon.git_icon}</span>
+                    <span>{icon.postgresql_icon}<Button variant="ghost">Postgresql</Button></span>
+                    <span>{icon.googlecloud_icon}<Button variant="ghost">Google Cloud</Button></span>
+                    <span>{icon.git_icon}<Button variant="ghost">Git/Github</Button></span>
                     
                 </div>
              

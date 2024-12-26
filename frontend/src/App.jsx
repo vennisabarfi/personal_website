@@ -5,7 +5,6 @@ import Contact from './Contact/Contact'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Projects from './Projects/Projects'
 import About from './About/About'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DarkMode from './DarkMode'
 function App() {
 
@@ -44,15 +43,6 @@ function App() {
  
   
 </Tabs>
-
-<BrowserRouter>
-        <Routes>
-          <Route path="/project" element={<Projects />} />
-     
-          
-        </Routes>
-      </BrowserRouter>
-
 
     
 </body>

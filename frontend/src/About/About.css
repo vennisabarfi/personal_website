@@ -150,11 +150,12 @@
     }
 
     .tech-icons{
-        margin-right: 5%;
+        margin-right: 35%;
+        margin-left: -2%;
         margin-bottom: 10%;
         scale: 0.9;
         display: grid;
-        gap: 25%;
+        gap: 15%;
         grid-template-columns: auto auto auto;
      
     }
