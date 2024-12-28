@@ -43,9 +43,7 @@ function App() {
   
 </Tabs>
 
-<a href="#projects">Go to Projects</a> 
 
-    
 </body>
 
 
