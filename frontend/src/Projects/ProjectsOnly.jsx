@@ -120,7 +120,7 @@ export default function ProjectsOnly(){
     return(
         <>
 
-        <div className="project-body">
+        <div className="projects-body">
 
     
         
