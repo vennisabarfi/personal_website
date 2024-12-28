@@ -7,7 +7,14 @@ import darbypages from "./darbypages.jpg";
 
 export default function Projects(){
 
-
+    function helpfunc() {
+        var x = document.getElementById("projects-only");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
 
 
 
@@ -122,7 +129,7 @@ export default function Projects(){
 
         <div className="project-body">
 
-    
+        <button onClick={helpfunc}>help</button>
         
         {/* freelance section */}
         <div className="freelance-header">

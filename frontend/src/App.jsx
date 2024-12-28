@@ -7,9 +7,9 @@ import Projects from './Projects/Projects'
 import About from './About/About'
 import DarkMode from './DarkMode'
 
-
 function App() {
 
+ 
   
 
   return ( 
@@ -43,8 +43,10 @@ function App() {
   
 </Tabs>
 
-<a href="#projects">Go to Projects</a> 
+<div id="projects-only">
+Help me
 
+</div>
     
 </body>
 
