@@ -6,29 +6,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Projects from './Projects/Projects'
 import About from './About/About'
 import DarkMode from './DarkMode'
-import React, { useEffect } from 'react';
-import { useLocation, useNavigate} from 'react-router-dom';
 
 
 function App() {
 
-  const location = useLocation();
-  const navigate = useNavigate();
-  const [activeTab, setActiveTab] = React.useState('about');
-
-  // Update active tab based on URL params
-  useEffect(() => {
-    const searchParams = new URLSearchParams(location.search);
-    const tab = searchParams.get('tab');
-    if (tab && ['about', 'projects', 'contact'].includes(tab)) {
-      setActiveTab(tab);
-    }
-  }, [location]);
-
-  const handleTabChange = (value) => {
-    setActiveTab(value);
-    navigate(`?tab=${value}`);
-  };
   
 
   return ( 
@@ -41,37 +22,29 @@ function App() {
     <Header/>
 
 
-    <Tabs value={activeTab} onValueChange={handleTabChange}>
-        <TabsList className="tabs">
-          <TabsTrigger value="about">About Me</TabsTrigger>
-          <TabsTrigger value="projects">Projects</TabsTrigger>
-          <TabsTrigger value="contact">Contact</TabsTrigger>
-        </TabsList>
+<Tabs defaultValue="about">
+  <TabsList className="tabs">
+    {/* <TabsTrigger className="px-4 py-2 text-blue-600"value="about">About Me</TabsTrigger> */}
+    <TabsTrigger value="about">About Me</TabsTrigger>
+    <TabsTrigger value="projects">Projects</TabsTrigger>
+    <TabsTrigger value="contact">Contact</TabsTrigger>
+  </TabsList>
+   <div className='space-y-2'>
+   <TabsContent value="about"><About/></TabsContent>
+   </div>
 
-        <div className="space-y-2">
-          <TabsContent value="about">
-            <About />
-          </TabsContent>
-        </div>
+      <div id="projects">
+      <TabsContent value="projects"><Projects/></TabsContent>
+      </div>
 
-        <div id="projects">
-          <TabsContent value="projects">
-            <Projects />
-          </TabsContent>
-        </div>
+      <div id="contact">
+      <TabsContent value="contact"><Contact/></TabsContent>
+      </div>
+  
+</Tabs>
 
-        <div id="contact">
-          <TabsContent value="contact">
-            <Contact />
-          </TabsContent>
-        </div>
-      </Tabs>
+<a href="#projects">Go to Projects</a> 
 
-     
-<div id="projects-only">
-Help me
-
-</div>
     
 </body>
 

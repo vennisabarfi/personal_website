@@ -7,7 +7,8 @@ import darbypages from "./darbypages.jpg";
 
 export default function Projects(){
 
-   
+
+
 
 
     const Freelance=[
@@ -121,7 +122,7 @@ export default function Projects(){
 
         <div className="project-body">
 
-       
+    
         
         {/* freelance section */}
         <div className="freelance-header">

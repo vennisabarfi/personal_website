@@ -1,7 +1,7 @@
 import "./About.css";
 import { Button } from "@/components/ui/button"
 import * as icon from "./Constants"; //import icons
-import { Link } from "react-router";
+
 
 
 
@@ -36,10 +36,6 @@ const resume_link_icon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20
 </svg>  
 
 
-
-
-
-
     return(
 
 
@@ -47,6 +43,7 @@ const resume_link_icon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20
         <>
         <div className="about-section">
 
+    
         <div className="summary">
            <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">About Me</h2> 
             <p>
@@ -59,12 +56,7 @@ const resume_link_icon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20
             
             {/* work on integrating font style  */}
             <br/>
-            <Link to="?tab=projects">
-        <Button className="freelance-link" variant="link">
-          View Freelance Work Here
-          {resume_link_icon}
-        </Button>
-      </Link>
+            <Button className="freelance-link" variant="link"><a href="#project">View Freelance Work Here</a>{resume_link_icon}</Button>
                 </p>
                
         
