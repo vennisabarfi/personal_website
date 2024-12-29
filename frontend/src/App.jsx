@@ -22,26 +22,31 @@ function App() {
     <Header/>
 
 
-<Tabs defaultValue="about">
-  <TabsList className="tabs">
-    {/* <TabsTrigger className="px-4 py-2 text-blue-600"value="about">About Me</TabsTrigger> */}
-    <TabsTrigger value="about"><span className='trigger'>About Me</span></TabsTrigger>
-    <TabsTrigger   value="projects"><span className='trigger'>Projects</span></TabsTrigger>
-    <TabsTrigger  value="contact"><span className='trigger'>Contact</span></TabsTrigger>
-  </TabsList>
-   <div className='space-y-2'>
-   <TabsContent value="about"><About/></TabsContent>
-   </div>
-
+ <Tabs defaultValue="about" className="w-full">
+      <div className="flex justify-center items-center mt-8">
+        <TabsList className="inline-flex bg-blue-100 dark:bg-blue-900 transform scale-[1.8]">
+          <TabsTrigger value="about">
+            <span className="text-slate-900 dark:text-slate-100">About Me</span>
+          </TabsTrigger>
+          <TabsTrigger value="projects">
+            <span className="text-slate-900 dark:text-slate-100">Projects</span>
+          </TabsTrigger>
+          <TabsTrigger value="contact">
+            <span className="text-slate-900 dark:text-slate-100">Contact</span>
+          </TabsTrigger>
+        </TabsList>
+      </div>
+      
+      <div className="space-y-2">
+        <TabsContent value="about"><About /></TabsContent>
+      </div>
       <div id="projects">
-      <TabsContent value="projects"><Projects/></TabsContent>
+        <TabsContent value="projects"><Projects /></TabsContent>
       </div>
-
       <div id="contact">
-      <TabsContent value="contact"><Contact/></TabsContent>
+        <TabsContent value="contact"><Contact /></TabsContent>
       </div>
-  
-</Tabs>
+    </Tabs>
 
 
 </body>
