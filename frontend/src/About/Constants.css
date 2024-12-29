@@ -1,0 +1,13 @@
+/* Default (light mode) */
+.github-icon  {
+    fill: #181717;
+  }
+  
+  /* Dark mode */
+
+  
+
+ /* Dark mode */
+body[data-theme='dark'] .github-icon {
+    fill: white;
+  }

@@ -1,32 +1,28 @@
-.contact-section{
+
+.contact-body{
     margin-top: 10%;
+}
+.contact-section{
     margin-left: 5%;
-    margin-right: 5%;;
-}
-/* image and contact list */
-
-.image-list{
-    display: flex;
-}
-
-
-.contact-image{
-    margin-left: 20%;
+    margin-right: 5%;
+    margin-top: 3rem;
   
-    scale: 0.8;
     
 }
 
+/* image and contact list */
+.image-list{
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+}
+
+.contact-image{
+    margin-left: 0; /* Removed the margin-left to prevent the image from being off-center */
+    scale: 0.8;
+}
+
 .image{
-    /* display: block;
- 
-  margin-right: auto; */
-  /* border-radius: 50%; */
-  width: 80%;
- 
-
-
-
+    width: 80%;
 }
 
 .contact-list{
@@ -35,7 +31,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 20%;
+    margin-right: 0; /* Removed margin-right to center the content */
     scale: 1.5;
 }
 
@@ -45,61 +41,54 @@
     align-items: center;
     justify-content: center;
 }
+
 .separator{
     display: none;
 }
 
-
 @media only screen and (max-width: 768px) {
-
-    .contact-section h2{
-        margin-left: 5%;
-      
+    .contact-section h2 {
+        margin-left: 0; /* Center h2 element */
+        margin-right: 0;
     }
 
     .contact-body {
         margin-top: 5%;
         scroll-behavior: smooth;
-        width: auto!important; 
-        overflow-x: hidden!important;
-        
-    } 
-    .image-list{
-        display: block;
+        width: auto !important;
+        overflow-x: hidden !important;
+        margin-left: auto; /* Center content */
+        margin-right: auto; /* Center content */
     }
-    
-    .contact-image{
-   
-        
-        scale: 0.8;
-       margin-left: 15%;
-        
+
+    /* Align images and list */
+    .image-list {
+        display: flex;
+        flex-direction: column; /* Stack the image and list vertically */
+        align-items: center; /* Center content */
+        margin-bottom: 20px; /* Add some space between image and list */
     }
- 
+
+    .contact-image {
+        scale: 0.7; /* Slightly smaller for mobile */
+        margin-left: 0; /* Ensure image is centered */
+        margin-bottom: 15px; /* Space below the image */
+    }
 
     .contact-list{
         scale: 0.9;
         display: grid;
         margin-left: 3%;
-        margin-right: 5%;
-        /* gap: 1%; */
+        margin-right: 3%; /* Reduced the margins to keep content centered */
         grid-template-columns: auto auto auto;
-        
     }
 
-    .freelance-contact h3{
-        margin-left: 4%;
-        margin-right: 3%;
+    .freelance-contact h3 {
+        margin-left: 0; /* Reset margin for h3 */
+        margin-right: 0;
     }
 
-    .separator{
-        display: block;
-        width: 50%;
-        margin-left: 5%;
+    .form {
+        /* Add any additional form styles here if needed */
     }
-
-    .form{
-     
-    }
-   
 }

@@ -9,4 +9,10 @@
 
     --radius: 0.5rem
   }
+  
+:root {
+  --font-color: #b0bec5; /* Soft gray */
+  --background-color: #0a192f; /* Deep blue */
+  --link-color: #00b8d4; /* Cyan */
+}
 }

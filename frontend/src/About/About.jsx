@@ -1,7 +1,7 @@
 import "./About.css";
 import { Button } from "@/components/ui/button"
 import * as icon from "./Constants"; //import icons
-
+import "../index.css"
 
 
 
@@ -124,7 +124,8 @@ const resume_link_icon = <svg xmlns="http://www.w3.org/2000/svg" fill="white" vi
                 <div className="tech-icons">
                     <span>{icon.react_icon}<Button variant="ghost">React JS</Button></span>
                     <span>{icon.gin_icon}<Button variant="ghost">Gin(Golang)</Button></span>
-                    <span>{icon.flask_icon}<Button variant="ghost">Flask(Python)</Button></span>
+                    <span className="mode-container">{icon.flask_icon}<Button variant="ghost">Flask (Python)</Button></span>
+
                     <span>{icon.tailwind_icon}<Button variant="ghost">TailwindCSS</Button></span>
                      
                 </div>

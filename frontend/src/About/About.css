@@ -2,7 +2,9 @@
     margin-left: 5%;
     margin-right: 5%;
     /* width: 80%; */
+    margin-top: 3rem;
 }
+
 
 .summary{
     margin-top: 10%;
@@ -99,6 +101,8 @@
     width: 24px;
     height: 24px;
 }
+/* Default (Light Mode) */
+
 
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
@@ -128,12 +132,15 @@
 @media only screen and (max-width: 768px) {
     
     .about-section{
+
         margin-left: 3%;
+        margin-top: 5rem;
         width: 90%;
     }
 
     .summary{
         margin-top: 10%;
+      
     }
 
     .summary p{
