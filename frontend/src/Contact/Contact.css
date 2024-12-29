@@ -5,7 +5,20 @@
 .contact-section{
     margin-left: 5%;
     margin-right: 5%;
+<<<<<<< HEAD
     margin-top: 3rem;
+=======
+}
+/* image and contact list */
+
+.image-list{
+    display: flex;
+}
+
+
+.contact-image{
+    margin-left: 20%;
+>>>>>>> 15f2189a2e868f5718287e425cb2bb15b2a9bf33
   
     
 }
