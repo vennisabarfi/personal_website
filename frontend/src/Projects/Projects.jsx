@@ -39,7 +39,7 @@ export default function Projects(){
             "tool_3":html_icon,
             "tool_4": css_icon,
             "website_link": "https://www.darbyfrederiksen.com",
-            "github_link": "github",
+            "github_link": "https://github.com/vennisabarfi/darby_website",
            
 
         },
