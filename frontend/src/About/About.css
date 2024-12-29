@@ -1,81 +1,66 @@
-.about-section{
+/* About Section */
+.about-section {
     margin-left: 5%;
     margin-right: 5%;
-    /* width: 80%; */
 }
 
-.summary{
+.summary {
     margin-top: 10%;
 }
 
-
-
-.summary p{
+.summary p {
     margin-top: 2%;
 }
 
-.experience h2{
-    margin-top: 5%;
-    
-}
-
-.experience h1{
+/* Experience Section */
+.experience h1 {
     margin-bottom: 1%;
 }
 
-.experience h3{
+.experience h2 {
+    margin-top: 5%;
+}
+
+.experience h3 {
     margin-bottom: 3%;
 }
 
-.freelance-link{
+.freelance-link {
     margin-top: 2%;
     margin-left: 45%;
 }
 
-.status{
+/* Status Styling */
+.status {
     color: #00b8d4;
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
-[data-theme="dark"] .status{
+[data-theme="dark"] .status {
     color: lightblue;
 }
-.resume-link-desktop a{
-    font-size:1.3em;
-}
 
+/* Resume Links */
 .resume-link-desktop {
     margin-top: 2%;
     margin-left: -1.5%;
     margin-bottom: 1%;
 }
 
-.resume-link-desktop svg{
-    fill:#00b8d4;
+.resume-link-desktop a {
+    font-size: 1.3em;
 }
 
-.resume-link{
+.resume-link-desktop svg {
+    fill: #00b8d4;
+}
+
+.resume-link {
     display: none;
 }
 
-
-/* .tech-icons{
-    margin-left: 20%;
-    margin-bottom: 10%;
-    scale: 0.9;
-    display: grid;
-   
-    grid-column-gap: 35%;
-    grid-row-gap: 50%;
-    
-    grid-template-columns: auto auto auto; 
-    
-   
- 
-} */
-
-
+/* Technology Section */
 .tech-section {
     padding: 20px 0;
 }
@@ -94,90 +79,44 @@
     gap: 8px;
 }
 
-/* Make icons consistent size */
 .tech-icons svg {
     width: 24px;
     height: 24px;
 }
 
-/* Mobile responsiveness */
+/* Responsive Design */
 @media screen and (max-width: 768px) {
-    .tech-icons {
-        gap: 15px;
-        justify-content: flex-start;
-    }
-    
-    .tech-icons span {
-        flex-basis: calc(50% - 15px); /* Two icons per row on mobile */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .tech-icons span {
-        flex-basis: 100%; /* One icon per row on very small screens */
-    }
-    
-    .tech-icons svg {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-
-
-@media only screen and (max-width: 768px) {
-    
-    .about-section{
+    .about-section {
         margin-left: 3%;
         width: 90%;
     }
 
-    .summary{
+    .summary {
         margin-top: 10%;
     }
 
-    .summary p{
-        margin-top: 2%;
+    .experience {
+        margin-top: 10%;
     }
 
-    .experience{
-       margin-top: 10%;
-    }
-    
-    .experience h3{
-        
-        margin-bottom: 5%;
+    .experience h1,
+    .experience h3,
+    .experience p {
         margin-left: 1%;
+    }
+
+    .experience h3 {
+        margin-bottom: 5%;
         margin-right: -4%;
     }
-    .experience h1{
-        margin-left: 1%;
-        margin-bottom: 1%;
-        
-    }
 
-    .experience p{
-        margin-left: 1%;
-    }
-
-    .experience h2{
-        margin-bottom: 1%;
-    }
-    
-    
-    .freelance-link{
+    .freelance-link {
         margin-top: 2%;
         margin-left: 20%;
         text-decoration: underline;
     }
-    
-    .status{
-       
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
-    
-    .resume-link{
+
+    .resume-link {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -186,31 +125,15 @@
         margin-left: 7%;
         text-decoration: underline;
     }
-    .resume-link a{
+
+    .resume-link a {
         font-size: 1.2em;
-       
     }
+
     .resume-link-desktop {
         display: none;
     }
 
-    /* .tech-section{
-        margin-top: 5%;
-    }
-    .tech-section h4{
-        margin-bottom: 3%;
-    }
-
-    .tech-icons{
-        margin-right: 35%;
-        margin-left: -2%;
-        margin-bottom: 10%;
-        scale: 0.9;
-        display: grid;
-        gap: 15%;
-        grid-template-columns: auto auto auto;
-     
-    } */
     .tech-section {
         padding: 10px 5px;
     }
@@ -220,25 +143,17 @@
         justify-content: space-between;
         margin: 8px 0 15px 0;
     }
-    
+
     .tech-icons span {
         flex-basis: calc(50% - 8px); /* Two icons per row */
         margin-bottom: 10px;
     }
-    
+
     .tech-icons svg {
         width: 20px;
         height: 20px;
     }
 
-    /* Adjust the buttons for better touch targets */
-    .tech-icons button {
-        padding: 6px 8px;
-        font-size: 14px;
-        min-height: 35px;
-    }
-
-    /* Reduce text size */
     .tech-section h3 {
         font-size: 20px;
         margin-bottom: 12px;
@@ -247,5 +162,16 @@
     .tech-section h4 {
         font-size: 16px;
         margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tech-icons span {
+        flex-basis: 100%; /* One icon per row */
+    }
+
+    .tech-icons svg {
+        width: 20px;
+        height: 20px;
     }
 }

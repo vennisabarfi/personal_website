@@ -24,7 +24,8 @@ function App() {
 
     <Tabs defaultValue="about" className="w-full">
   <div className="flex justify-center items-center mt-4 sm:mt-6 md:mt-8">
-    <TabsList className="inline-flex bg-blue-100 dark:bg-blue-900 transform scale-100 sm:scale-125 md:scale-[1.8] w-full max-w-xs sm:max-w-md md:max-w-lg">
+  <TabsList className="inline-flex bg-blue-100 dark:bg-blue-900 transform scale-110 sm:scale-135 md:scale-[1.8] w-full max-w-xs sm:max-w-md md:max-w-lg">
+
       <TabsTrigger value="about" className="flex-1">
         <span className="text-slate-900 dark:text-slate-100 text-sm sm:text-base">About Me</span>
       </TabsTrigger>

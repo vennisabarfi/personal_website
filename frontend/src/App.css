@@ -1,39 +1,49 @@
-.main-body{
-  
+.main-body {
+    padding: 10px; /* Add consistent padding for the main container */
+    margin: 0; /* Ensure no extra margins */
 }
 
-
-.contact-icons{
-    scale: 0.2;
+/* Contact Icons Section */
+.contact-icons {
+    scale: 0.3; /* Adjusted for better visibility */
     display: grid;
-    gap: 30%;
-    grid-template-columns: auto auto auto;
- 
+    gap: 20px; /* Fixed gaps for spacing */
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Responsive grid */
+    justify-content: center; /* Center grid items */
+    margin: 20px auto; /* Add margin for spacing */
 }
 
+/* Tabs Container */
 .tabs-container {
     display: flex;
+    flex-direction: column; /* Stack items for smaller screens */
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin: 30px 10px; /* Consistent spacing */
 }
 
+/* Tabs */
 .tabs {
     display: flex;
-    gap: 20px;
-    scale: 1.8;
+    gap: 15px; /* Reduced gap for smaller screens */
+    scale: 1.2; /* Responsive scaling */
     background-color: #b0bec5;
-    padding: 10px;
+    padding: 10px; /* Uniform padding */
     border-radius: 8px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    width: auto; /* Adapt to content */
+    margin: 0 auto; /* Center tabs */
 }
 
+/* Dark Theme Tabs */
 [data-theme="dark"] .tabs {
     background-color: #b0bec5;
 }
 
+/* Tab Trigger */
 .trigger {
     color: #0a192f;
-    padding: 10px 20px;
+    padding: 8px 16px; /* Adjusted padding for consistency */
     border: 1px solid transparent;
     border-radius: 4px;
     text-align: center;
@@ -50,26 +60,45 @@
     color: #1e1e1e;
 }
 
+/* Tab Section */
 .tab-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Stack items for smaller screens */
     align-items: center;
     justify-content: center;
+    gap: 10px; /* Uniform spacing */
+    margin: 20px auto; /* Center section with consistent margins */
 }
 
+/* Tab Content */
 .tab-content {
-    margin-right: 5%;
+    margin: 0 auto; /* Center content */
+    text-align: center; /* Ensure centered alignment */
 }
 
+/* Media Queries */
 @media only screen and (max-width: 768px) {
-    .contact-icons{
-        scale: 0.3;
+    .contact-icons {
+        scale: 0.4; /* Adjusted scaling for better visibility */
+        gap: 15px; /* Fixed spacing */
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* Flexible grid */
+        margin: 10px auto; /* Center grid on smaller screens */
     }
 
-    .tabs{
-        margin-left: 18%;
-        scale: 1.2;
+    .tabs {
+        scale: 1.1; /* Smaller scale for compact view */
+        gap: 10px; /* Adjusted gap */
+        flex-wrap: wrap;
+        padding: 8px; /* Reduced padding */
+        margin: 10px auto; /* Ensure centering on smaller screens */
     }
 
+    .tabs-container {
+        margin: 20px 10px; /* Reduced margin for compactness */
+    }
 
+    .tab-content {
+        margin: 0 auto; /* Center content */
+        text-align: center;
+    }
 }

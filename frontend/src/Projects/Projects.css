@@ -1,166 +1,155 @@
-.project-body{
-    margin-left: 5%;
-    margin-right: 5%;
+.project-body {
+    padding: 10px; /* Consistent padding for the main container */
+    margin: 0 auto; /* Center content */
+    max-width: 100%; /* Ensure it fits smaller screens */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
-.freelance-header{
+
+.freelance-header {
     margin-top: 10%;
     margin-left: 5%;
 }
 
-.experience h3{
-    margin-left: 10%;
+.experience h3 {
+    margin-left: 8%;
 }
 
-.freelance-section{
-    width: 80%;
-    
-  
+.freelance-section {
+    width: 85%;
+    margin: 20px auto; /* Center the section with consistent margins */
 }
 
-/* fixed so specify width and then description grows to fit this */
-.thumbnail-description{
+.thumbnail-description {
     display: flex;
-    margin-left: 20%;
-}
-.thumbnail{
-    min-width: 300px;
+    flex-wrap: wrap; /* Ensure responsiveness */
+    gap: 15px; /* Uniform spacing between elements */
     margin-left: 10%;
-}
-
-.description{
-    flex-grow: 1;
-    margin-left: 5%;
-    margin-right: 6%;
-
-}
-
-.free-description{
-    margin-right: 40%;
-}
-
-.freelance{
-    margin-bottom: 5%;
-}
-
-.freelance h3{
-    margin-top: 5%;
-}
-.thumbnail-description img{
-    /* scale: 0.4; */
-    height: 200px;
-    display: inline-block;
-}
-
-.thumbnail-description span{
-    display: inline-block;
-    padding: 1%;
-}
-
-.links{
- 
-    margin-top: 5%;
-    display: flex; 
-}
-
-.website-link{
-    scale: 1.1;
-    /* margin-right: 1%; */
-}
-
-
-.github-link{
-   
-    /* margin-left: 1%; */
-    flex-direction: row;
-    margin-bottom: 2%;
-}
-.tools{
-    margin-top: 1%;
-    margin-left: 1%;
-    scale: 1.2;
-}
-
-.portfolio-link-desktop{
-    display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-right: 10%;
-        margin-left: 7%;
-        text-decoration: underline;
-        scale: 1.5;
-}
-
-@media only screen and (max-width: 768px) {
-    
-    /* fix the side to side movement when scrolling which is annoying */
-    .project-body {
-        margin-left: none;
-        margin-right: none;
-        width: auto!important; 
-        overflow-x: hidden!important
-       
-    } 
-
-    .freelance{
-
-    }
-    .freelance-header{
-        margin-left: 5%;
-    }
-    .freelance-section{
-        width: 90%;
-        margin-left: 8%;
-    
-    }
-
-    .experience h3{
-        
-        padding-left: 7%;
-       
-
-    }
-
-    
-.thumbnail-description{
-    display: inline-block;
-    margin-left: 3%;
-}
-
-.free-description{
     margin-right: 10%;
 }
 
-    .thumbnail{
-        max-width: 40%;
-        margin-left: 8%;
-    }
-    
-    .description{
-        flex-grow: 1;
-        
-        /* margin-left: 5%; */
-        margin-right: 6%;
-    
+.thumbnail {
+    min-width: 300px;
+    margin-left: 5%; /* Reduced for better layout */
+    margin-right: 5%; /* Added to balance alignment */
+}
+
+.description {
+    flex-grow: 1;
+    margin: 0 5%; /* Symmetrical margins */
+}
+
+.free-description {
+    margin-right: 20%; /* Reduced for smaller screens */
+    margin-left: 5%; /* Added for better spacing */
+}
+
+.freelance {
+    margin-bottom: 5%;
+}
+
+.freelance h3 {
+    margin-top: 5%;
+}
+
+.thumbnail-description img {
+    height: 200px;
+    width: auto; /* Maintain aspect ratio */
+    display: inline-block;
+}
+
+.thumbnail-description span {
+    display: inline-block;
+    padding: 5px; /* Reduced for compact spacing */
+}
+
+.links {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center; /* Center the links */
+    gap: 10px; /* Add spacing between links */
+}
+
+.website-link {
+    scale: 1.1;
+}
+
+.github-link {
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+.tools {
+    margin-top: 1%;
+    margin-left: 5%;
+    scale: 1.1; /* Slightly reduced for better scaling */
+}
+
+.portfolio-link-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Center the portfolio link */
+    text-decoration: underline;
+    scale: 1.5;
+}
+
+/* Media Queries for Smaller Screens */
+@media only screen and (max-width: 768px) {
+    .project-body {
+        width: 100%; /* Ensure full width */
+        padding: 10px; /* Consistent padding */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
-    .links{
- 
-        margin-bottom: -5%;
-        display: flex; 
-    }
-    .free-description{
+    .freelance-header {
         margin-left: 5%;
-        margin-left: 2%;
+        margin-top: 8%; /* Reduced for compact layout */
     }
 
-    .tools{
-     
-        margin-left: 2%;
-        scale: 1.2;
+    .freelance-section {
+        width: 90%;
+        margin: 0 auto; /* Centered on smaller screens */
     }
 
-    .portfolio-link-desktop{
-        display: none;
+    .experience h3 {
+        margin-left: 5%;
+    }
+
+    .thumbnail-description {
+        display: flex;
+        flex-direction: column; /* Stack items for small screens */
+        margin: 10px auto; /* Center the section */
+    }
+
+    .thumbnail {
+        max-width: 90%; /* Ensure it fits the screen */
+        margin: 0 auto; /* Center thumbnail */
+    }
+
+    .description {
+        margin: 10px 5%; /* Consistent spacing */
+        text-align: justify; /* Improved text alignment */
+    }
+
+    .free-description {
+        margin-right: 10%;
+        margin-left: 5%; /* Symmetrical margins */
+    }
+
+    .links {
+        margin-top: 10px; /* Adjust for smaller screens */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .tools {
+        margin: 10px auto; /* Center tools */
+        scale: 1.1; /* Reduced for consistency */
+    }
+
+    .portfolio-link-desktop {
+        display: none; /* Hidden on smaller screens */
     }
 }
