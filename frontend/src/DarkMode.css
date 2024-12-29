@@ -1,17 +1,27 @@
 /* 1 */
 :root {
-    /* --font-color: #333;
-    --background-color: #eee;
-    --link-color: cornflowerblue; */
+    --font-color: #b0bec5;
+    --background-color: #0a192f;
+    --link-color: #00b8d4;
+    
   }
   
   /* 2 */
   [data-theme="dark"] {
-    --font-color: #eee;
-    --background-color: #333;
-    --link-color: lightblue;
+    --font-color: #00b8d4;
+    /* --background-color: #282828; */
+    --background-color: #1e1e1e;
+    /* --background-color: #333; */
+    --link-color: #add8e6;
+   
+    
   }
-  
+
+
+
+
+
+
   /* 3 */
   body {
     background-color: var(--background-color);

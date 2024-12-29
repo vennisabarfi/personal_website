@@ -12,14 +12,23 @@
 }
 
 .tabs{
-
- 
-   
     margin-left: 41%;
     margin-top: 5%;
     scale: 1.8;
+    background-color:  #b0bec5;
+}
+
+[data-theme="dark"] .tabs{
   
-    
+    background-color:  #b0bec5;
+}
+
+.trigger{
+    color: #0a192f;
+}
+
+[data-theme="dark"] .trigger{
+    color: #1e1e1e;
 }
 
 .tab-section{

@@ -25,9 +25,9 @@ function App() {
 <Tabs defaultValue="about">
   <TabsList className="tabs">
     {/* <TabsTrigger className="px-4 py-2 text-blue-600"value="about">About Me</TabsTrigger> */}
-    <TabsTrigger value="about">About Me</TabsTrigger>
-    <TabsTrigger value="projects">Projects</TabsTrigger>
-    <TabsTrigger value="contact">Contact</TabsTrigger>
+    <TabsTrigger value="about"><span className='trigger'>About Me</span></TabsTrigger>
+    <TabsTrigger   value="projects"><span className='trigger'>Projects</span></TabsTrigger>
+    <TabsTrigger  value="contact"><span className='trigger'>Contact</span></TabsTrigger>
   </TabsList>
    <div className='space-y-2'>
    <TabsContent value="about"><About/></TabsContent>

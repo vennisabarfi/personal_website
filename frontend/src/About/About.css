@@ -33,11 +33,14 @@
 }
 
 .status{
-    color: green;
+    color: #00b8d4;
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
+[data-theme="dark"] .status{
+    color: lightblue;
+}
 .resume-link-desktop a{
     font-size:1.3em;
 }
@@ -46,6 +49,10 @@
     margin-top: 2%;
     margin-left: -1.5%;
     margin-bottom: 1%;
+}
+
+.resume-link-desktop svg{
+    fill:#00b8d4;
 }
 
 .resume-link{

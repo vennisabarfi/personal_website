@@ -125,7 +125,7 @@ export default function Form(){
       {errors.feedback && <span className="form-error">This field is required</span>}
       <Textarea onChange={(e) => setForm({...form, name: e.target.value})} placeholder="Hi Vennisa, I want to build a website for my business and would love to connect . . ." id="feedback-area" {...register("feedback",{required: "Feedback field cannot be empty"})}/>
       <Toaster className="toaster" position="top-center"/>
-      <Button type="submit" >
+      <Button className="form-button" type="submit" >
         Send message</Button>
       <p className="text-sm text-muted-foreground">
         Thanks for connecting!
