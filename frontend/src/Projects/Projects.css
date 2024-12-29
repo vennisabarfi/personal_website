@@ -95,8 +95,11 @@
     
     /* fix the side to side movement when scrolling which is annoying */
     .project-body {
+        margin-left: none;
+        margin-right: none;
         width: auto!important; 
         overflow-x: hidden!important
+       
     } 
 
     .freelance{
