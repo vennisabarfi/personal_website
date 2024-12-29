@@ -96,7 +96,7 @@ const resume_link_icon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20
                 
                 <div className="resume-link">
                     {/* link to resume properly */}
-                <Button variant="link"><a href="/resume" target="_blank">View Full Resume</a>{resume_link_icon}</Button>
+                <Button variant="link"><a href="https://drive.google.com/file/d/1eR5IP1qIQvZWkLlGKlixwYtq0rNGDsYt/view" target="_blank">View Full Resume</a>{resume_link_icon}</Button>
                 </div>
 
 
