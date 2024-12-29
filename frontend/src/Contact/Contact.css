@@ -1,13 +1,11 @@
 
 .contact-body{
     margin-top: 10%;
+   
 }
 .contact-section{
     margin-left: 5%;
     margin-right: 5%;
-<<<<<<< HEAD
-    margin-top: 3rem;
-=======
 }
 /* image and contact list */
 
@@ -18,7 +16,6 @@
 
 .contact-image{
     margin-left: 20%;
->>>>>>> 15f2189a2e868f5718287e425cb2bb15b2a9bf33
   
     
 }
@@ -68,6 +65,7 @@
     .contact-body {
         margin-top: 5%;
         scroll-behavior: smooth;
+        margin-top: 3rem;
         width: auto !important;
         overflow-x: hidden !important;
         margin-left: auto; /* Center content */
