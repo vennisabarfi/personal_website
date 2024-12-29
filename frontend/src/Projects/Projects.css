@@ -1,155 +1,165 @@
-.project-body {
-    padding: 10px; /* Consistent padding for the main container */
-    margin: 0 auto; /* Center content */
-    max-width: 100%; /* Ensure it fits smaller screens */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+.project-body{
+    margin-left: 5%;
+    margin-right: 5%;
 }
-
-.freelance-header {
+.freelance-header{
     margin-top: 10%;
     margin-left: 5%;
 }
 
-.experience h3 {
-    margin-left: 8%;
-}
-
-.freelance-section {
-    width: 85%;
-    margin: 20px auto; /* Center the section with consistent margins */
-}
-
-.thumbnail-description {
-    display: flex;
-    flex-wrap: wrap; /* Ensure responsiveness */
-    gap: 15px; /* Uniform spacing between elements */
+.experience h3{
     margin-left: 10%;
-    margin-right: 10%;
 }
 
-.thumbnail {
+.freelance-section{
+    width: 80%;
+    
+  
+}
+
+/* fixed so specify width and then description grows to fit this */
+.thumbnail-description{
+    display: flex;
+    margin-left: 20%;
+}
+.thumbnail{
     min-width: 300px;
-    margin-left: 5%; /* Reduced for better layout */
-    margin-right: 5%; /* Added to balance alignment */
+    margin-left: 10%;
 }
 
-.description {
+.description{
     flex-grow: 1;
-    margin: 0 5%; /* Symmetrical margins */
+    margin-left: 5%;
+    margin-right: 6%;
+
 }
 
-.free-description {
-    margin-right: 20%; /* Reduced for smaller screens */
-    margin-left: 5%; /* Added for better spacing */
+.free-description{
+    margin-right: 40%;
 }
 
-.freelance {
+.freelance{
     margin-bottom: 5%;
 }
 
-.freelance h3 {
+.freelance h3{
     margin-top: 5%;
 }
-
-.thumbnail-description img {
+.thumbnail-description img{
+    /* scale: 0.4; */
     height: 200px;
-    width: auto; /* Maintain aspect ratio */
     display: inline-block;
 }
 
-.thumbnail-description span {
+.thumbnail-description span{
     display: inline-block;
-    padding: 5px; /* Reduced for compact spacing */
+    padding: 1%;
 }
 
-.links {
+.links{
+ 
     margin-top: 5%;
-    display: flex;
-    justify-content: center; /* Center the links */
-    gap: 10px; /* Add spacing between links */
+    display: flex; 
 }
 
-.website-link {
+.website-link{
     scale: 1.1;
+    /* margin-right: 1%; */
 }
 
-.github-link {
+
+.github-link{
+   
+    /* margin-left: 1%; */
     flex-direction: row;
     margin-bottom: 2%;
 }
-
-.tools {
+.tools{
     margin-top: 1%;
-    margin-left: 5%;
-    scale: 1.1; /* Slightly reduced for better scaling */
+    margin-left: 1%;
+    scale: 1.2;
 }
 
-.portfolio-link-desktop {
+.portfolio-link-desktop{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; /* Center the portfolio link */
-    text-decoration: underline;
-    scale: 1.5;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10%;
+        margin-left: 7%;
+        text-decoration: underline;
+        scale: 1.5;
 }
 
-/* Media Queries for Smaller Screens */
 @media only screen and (max-width: 768px) {
+    
+    /* fix the side to side movement when scrolling which is annoying */
     .project-body {
-        width: 100%; /* Ensure full width */
-        padding: 10px; /* Consistent padding */
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
+       
+        width: auto!important; 
+        overflow-x: hidden!important
+       
+    } 
 
-    .freelance-header {
+    .freelance{
+
+    }
+    .freelance-header{
         margin-left: 5%;
-        margin-top: 8%; /* Reduced for compact layout */
     }
-
-    .freelance-section {
+    .freelance-section{
         width: 90%;
-        margin: 0 auto; /* Centered on smaller screens */
+        margin-left: 8%;
+    
     }
 
-    .experience h3 {
+    .experience h3{
+        
+        padding-left: 7%;
+       
+
+    }
+
+    
+.thumbnail-description{
+    display: inline-block;
+    margin-left: 3%;
+}
+
+.free-description{
+    margin-right: 10%;
+}
+
+    .thumbnail{
+        max-width: 40%;
+        margin-left: 8%;
+    }
+    
+    .description{
+        flex-grow: 1;
+        
+        /* margin-left: 5%; */
+        margin-right: 6%;
+    
+    }
+
+    .links{
+ 
+        margin-bottom: -5%;
+        display: flex; 
+    }
+    .free-description{
         margin-left: 5%;
+        margin-left: 2%;
     }
 
-    .thumbnail-description {
-        display: flex;
-        flex-direction: column; /* Stack items for small screens */
-        margin: 10px auto; /* Center the section */
+    .tools{
+     
+        margin-left: 2%;
+        scale: 1.2;
     }
 
-    .thumbnail {
-        max-width: 90%; /* Ensure it fits the screen */
-        margin: 0 auto; /* Center thumbnail */
-    }
-
-    .description {
-        margin: 10px 5%; /* Consistent spacing */
-        text-align: justify; /* Improved text alignment */
-    }
-
-    .free-description {
-        margin-right: 10%;
-        margin-left: 5%; /* Symmetrical margins */
-    }
-
-    .links {
-        margin-top: 10px; /* Adjust for smaller screens */
-        flex-wrap: wrap; /* Allow wrapping */
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .tools {
-        margin: 10px auto; /* Center tools */
-        scale: 1.1; /* Reduced for consistency */
-    }
-
-    .portfolio-link-desktop {
-        display: none; /* Hidden on smaller screens */
+    .portfolio-link-desktop{
+        display: none;
     }
 }
