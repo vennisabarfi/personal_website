@@ -93,12 +93,10 @@
 
 @media only screen and (max-width: 768px) {
     
-    /* fix the side to side movement when scrolling which is annoying */
-    .project-body {
-       
+      /* fix the side to side movement when scrolling which is annoying */
+      .project-body {
         width: auto!important; 
         overflow-x: hidden!important
-       
     } 
 
     .freelance{
