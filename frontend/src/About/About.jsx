@@ -100,50 +100,48 @@ const resume_link_icon = <svg xmlns="http://www.w3.org/2000/svg" fill="white" vi
                 </div>
 
 
-                {/* Tech Stack */}
-                <div className="tech-section">
-                <div>
-                <h3 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight">Tech Stack</h3>
-                </div>
+        {/* Tech Stack */}
+<div className="tech-section">
+    <div>
+        <h3 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight">Tech Stack</h3>
+    </div>
 
-                {/* languages */}
-                <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Languages</h4>
-                <div className="tech-icons">
-                    <span className="python-icon">{icon.python_icon}<Button variant="ghost">Python</Button></span>
-                    <span className="go-icon">{icon.go_icon}<Button variant="ghost">Golang</Button></span>
-                    <span>{icon.javascript_icon}<Button variant="ghost">JavaScript</Button></span>
-                    <span>{icon.html_icon}<Button variant="ghost">HTML5</Button></span>
-                    <span>{icon.css_icon}<Button variant="ghost">CSS3</Button></span>
-                    
-                </div>
+    {/* Languages */}
+    <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Languages</h4>
+    <div className="tech-icons">
+        <span className="python-icon">{icon.python_icon}<span className="tech-label">Python</span></span>
+        <span className="go-icon">{icon.go_icon}<span className="tech-label">Golang</span></span>
+        <span>{icon.javascript_icon}<span className="tech-label">JavaScript</span></span>
+        <span>{icon.html_icon}<span className="tech-label">HTML5</span></span>
+        <span>{icon.css_icon}<span className="tech-label">CSS3</span></span>
+    </div>
+
+    {/* Frameworks */}
+    <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Frameworks</h4>
+    <div className="tech-icons">
+        <span className="icon">{icon.react_icon}<span className="tech-label">React JS</span></span>
+        <span>{icon.gin_icon}<span className="tech-label">Gin (Golang)</span></span>
+        <span>{icon.flask_icon}<span className="tech-label">Flask (Python)</span></span>
+        <span>{icon.tailwind_icon}<span className="tech-label">TailwindCSS</span></span>
+    </div>
+</div>
 
 
-                
-                <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Frameworks</h4>
-
-                <div className="tech-icons">
-                    <span>{icon.react_icon}<Button variant="ghost">React JS</Button></span>
-                    <span>{icon.gin_icon}<Button variant="ghost">Gin(Golang)</Button></span>
-                    <span className="mode-container">{icon.flask_icon}<Button variant="ghost">Flask (Python)</Button></span>
-
-                    <span>{icon.tailwind_icon}<Button variant="ghost">TailwindCSS</Button></span>
-                     
-                </div>
                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
                 Tools
              </h4>
              <div className="tech-icons">
-                    <span>{icon.postgresql_icon}<Button variant="ghost">Postgresql</Button></span>
-                    <span>{icon.googlecloud_icon}<Button variant="ghost">Google Cloud</Button></span>
-                    <span>{icon.git_icon}<Button variant="ghost">Git/Github</Button></span>
-                    
-                </div>
+    <span>{icon.postgresql_icon}<span className="tech-label">Postgresql</span></span>
+    <span>{icon.googlecloud_icon}<span className="tech-label">Google Cloud</span></span>
+    <span>{icon.git_icon}<span className="tech-label">Git/Github</span></span>
+</div>
+
              
 
                 </div>
             
               
-            </div>
+            
 
             
 

@@ -148,6 +148,17 @@
         justify-content: space-between;
         margin: 8px 0 15px 0;
     }
+   /* Disable hover effect for all screens */
+   /* .icon Button:hover,
+   .tech-icons Button:hover {
+       background: none;
+       color: inherit;
+       box-shadow: none;
+       transform: none;
+       filter: none;
+       cursor: default; /* Ensure no hover cursor */
+
+   /* } */ 
 
     .tech-icons span {
         flex-basis: calc(50% - 8px); /* Two icons per row */

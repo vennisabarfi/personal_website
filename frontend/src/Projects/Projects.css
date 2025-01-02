@@ -86,6 +86,15 @@
     transform: scale(1.2);
 }
 
+.tools Button:hover {
+    /* Disable hover styles */
+    background: none;  /* Remove background change */
+    color: inherit;    /* Ensure text color doesn't change */
+    box-shadow: none;  /* Remove box-shadow (if any) */
+    cursor:default;
+}
+
+
 .portfolio-link-desktop {
     display: flex;
     justify-content: center;
