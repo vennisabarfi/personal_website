@@ -47,7 +47,7 @@ const resume_link_icon = <svg xmlns="http://www.w3.org/2000/svg" fill="white" vi
         <div className="summary">
            <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">About Me</h2> 
             <p>
-                I&apos;m a engineer passionate about building beautiful and accessible websites and software.
+                I&apos;m an engineer passionate about building beautiful and accessible websites and software.
                 I have a keen eye for building software that scales; with the end user in mind.
                 
                 </p>
