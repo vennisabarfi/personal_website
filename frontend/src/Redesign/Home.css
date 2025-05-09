@@ -1,0 +1,14 @@
+.center-intro{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.center-intro ul{
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+}
