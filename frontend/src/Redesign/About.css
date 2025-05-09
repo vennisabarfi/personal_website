@@ -13,17 +13,19 @@
     list-style-type: disc;
 }
 
-/* clean this up asap. ugly af */
-.intro p ul li a{
+.intro p a{
     text-decoration: underline;
     text-decoration-color:rgb(61, 168, 204);
     text-decoration-thickness: 5px;
 }
 
-.intro p ul li a:hover{
+.intro p a:hover{
     color:rgb(61, 168, 204);
     text-decoration-color: rgb(105, 210, 231);
+    cursor: pointer;
 }
-.intro p ul li a:visited{
+
+.intro p a:visited{
     text-decoration: underline;
+    text-decoration-color:rgb(61, 168, 204);
 }
