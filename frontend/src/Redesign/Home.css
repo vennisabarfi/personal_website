@@ -42,14 +42,7 @@
   
   /* Mobile-Specific Adjustments */
   @media (max-width: 768px) {
-    .center-intro {
-      justify-content: flex-start; /* Better for short screens */
-      padding-top: 3rem; /* Space from top */
-    }
     
-    .center-intro ul {
-      margin: 0.25rem 0; /* Tighter spacing */
-    }
     
     .center-intro a {
       font-size: 1.1rem; /* Slightly larger text */
