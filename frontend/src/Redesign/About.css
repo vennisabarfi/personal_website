@@ -10,4 +10,20 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
     margin-top: 3.5rem;
+    list-style-type: disc;
+}
+
+/* clean this up asap. ugly af */
+.intro p ul li a{
+    text-decoration: underline;
+    text-decoration-color:rgb(61, 168, 204);
+    text-decoration-thickness: 5px;
+}
+
+.intro p ul li a:hover{
+    color:rgb(61, 168, 204);
+    text-decoration-color: rgb(105, 210, 231);
+}
+.intro p ul li a:visited{
+    text-decoration: underline;
 }

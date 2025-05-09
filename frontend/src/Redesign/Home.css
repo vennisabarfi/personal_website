@@ -25,6 +25,8 @@
 .center-intro ul.link:hover{
     text-decoration: underline;
     color:rgb(61, 168, 204);
+    text-decoration-color: rgb(105, 210, 231);
+    
     
     
 }
