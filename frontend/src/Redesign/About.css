@@ -1,70 +1,31 @@
-/* Mobile-First Base Styles */
-.intro {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1rem; /* Smaller padding on mobile */
-    width: 100%; /* Ensures proper containment */
-  }
-  
-  /* Paragraph Styles */
-  .intro p {
-    font-size: 1rem; /* Smaller base size for mobile */
-    line-height: 1.6; /* Unitless for better scaling */
-    margin: 2rem 0 1rem; /* Top/Bottom margins only */
-    hyphens: auto; /* Better text wrapping */
-  }
-  
-  /* Link Styles */
-  .intro p a {
+.intro{
+    max-width: 800px;       /* Optimal line length for reading */
+  margin-left: auto;      /* Left-align content */
+  margin-right: auto;     /* Center container horizontally */
+  padding: 0 2rem; 
+
+}
+
+.intro p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: 3.5rem;
+    list-style-type: disc;
+}
+
+.intro p a{
     text-decoration: underline;
-    text-decoration-color: rgb(61, 168, 204);
-    text-decoration-thickness: 2px; /* Thinner on mobile */
-    text-underline-offset: 0.2em; /* Better spacing */
-    padding: 0.1em 0; /* Larger touch target */
-    transition: all 0.2s ease; /* Smooth hover effects */
-  }
-  
-  /* Hover States (Desktop Only) */
-  @media (hover: hover) {
-    .intro p a:hover {
-      color: rgb(61, 168, 204);
-      text-decoration-color: rgb(105, 210, 231);
-    }
-  }
-   
-  /* Visited State */
-  .intro p a:visited {
-    text-decoration-color: rgba(61, 168, 204, 0.7); /* Slightly transparent */
-  }
-  
-  /* Tablet+ Adjustments (768px+) */
-  @media (min-width: 768px) {
-    .intro {
-      padding: 0 2rem;
-    }
-    
-    .intro p {
-      font-size: 1.25rem;
-      line-height: 1.75rem;
-      margin-top: 3.5rem;
-    }
-    
-    .intro p a {
-      text-decoration-thickness: 3px; /* Thicker on desktop */
-    }
-  }
-  
-  /* Desktop Enhancements (1024px+) */
-  @media (min-width: 1024px) {
-    .intro p a {
-      text-decoration-thickness: 5px; /* Original thickness */
-    }
-  }
-  
-  /* Very Small Screens (<= 375px) */
-  @media (max-width: 375px) {
-    .intro p {
-      font-size: 0.9rem;
-      line-height: 1.5;
-    }
-  }
+    text-decoration-color:rgb(61, 168, 204);
+    text-decoration-thickness: 5px;
+}
+
+.intro p a:hover{
+    color:rgb(61, 168, 204);
+    text-decoration-color: rgb(105, 210, 231);
+    cursor: pointer;
+}
+
+.intro p a:visited{
+    text-decoration: underline;
+    text-decoration-color:rgb(61, 168, 204);
+}
