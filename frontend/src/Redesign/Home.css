@@ -1,14 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
 .center-intro{
-    display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   text-align: center;
+  font-family: 'Manrope', sans-serif;
 }
 
 .center-intro ul{
     list-style: none;
     padding: 0;
     margin: 8px 0;
+}
+
+.center-intro ul.link:hover{
+    text-decoration: underline;
+    color:rgb(61, 168, 204);
+    
+    
 }
