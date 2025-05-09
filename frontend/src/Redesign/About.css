@@ -1,4 +1,13 @@
 .intro{
-    margin: 10px 50px 20px 0;
-    color:green;
+    max-width: 800px;       /* Optimal line length for reading */
+  margin-left: auto;      /* Left-align content */
+  margin-right: auto;     /* Center container horizontally */
+  padding: 0 2rem; 
+
+}
+
+.intro p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: 3.5rem;
 }
