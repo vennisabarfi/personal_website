@@ -30,21 +30,26 @@
     text-decoration-color:rgb(61, 168, 204);
 }
 
-/* Mobile and small screen styles */
+/* Mobile styles */
 @media (max-width: 600px) {
     .intro {
-      padding: 0 1rem; /* Reduce side padding */
-      max-width: 100%; /* Allow full width */
+      padding: 0 1rem;
+      max-width: 100%;
     }
   
-    .intro p {
-      font-size: 1rem;      /* Smaller font for readability */
-      line-height: 1.5rem;  /* Adjust line height accordingly */
-      margin-top: 2rem;     /* Less spacing on smaller screens */
+    .intro p,
+    .intro li {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-top: 1.5rem;
+    }
+  
+    .intro ul {
+      padding-left: 1rem; /* Less indent so bullets stay visible */
     }
   
     .intro p a {
-      text-decoration-thickness: 3px; /* Slightly thinner for small text */
+      text-decoration-thickness: 3px;
     }
   }
   
