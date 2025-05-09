@@ -1,32 +1,58 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-/* About Page */
-.center-intro{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  font-family: 'Manrope', sans-serif;
-}
-
-.center-intro ul{
+/* About Page - Mobile First */
+.center-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Changed from height to min-height */
+    padding: 1rem; /* Added safe spacing */
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .center-intro ul {
     list-style: none;
     padding: 0;
-    margin: 8px 0;
-}
-/* revisit this to see if this makes sense */
-.center-intro a:visited{
+    margin: 0.5rem 0; /* Using rem for better scaling */
+    width: 100%; /* Better mobile behavior */
+    max-width: 300px; /* Prevents overstretching */
+  }
+  
+  /* Links - Mobile Optimized */
+  .center-intro a {
+    display: inline-block; /* Better touch targets */
+    padding: 0.5rem 0; /* Larger click area */
     text-decoration: underline;
-}
-
-.center-intro ul.link:hover{
-    text-decoration: underline;
-    color:rgb(61, 168, 204);
-    text-decoration-color: rgb(105, 210, 231);
+    text-decoration-color: rgb(61, 168, 204);
+    text-underline-offset: 0.25em; /* Better spacing */
+  }
+  
+  /* Visited State */
+  .center-intro a:visited {
+    text-decoration-color: rgb(105, 210, 231); /* More subtle than underline */
+  }
+  
+  /* Hover States with Fallback for Touch */
+  @media (hover: hover) { /* Only applies on devices with hover */
+    .center-intro a:hover {
+      color: rgb(61, 168, 204);
+      text-decoration-color: rgb(105, 210, 231);
+    }
+  }
+  
+  /* Mobile-Specific Adjustments */
+  @media (max-width: 768px) {
+    .center-intro {
+      justify-content: flex-start; /* Better for short screens */
+      padding-top: 3rem; /* Space from top */
+    }
     
+    .center-intro ul {
+      margin: 0.25rem 0; /* Tighter spacing */
+    }
     
-    
-}
+    .center-intro a {
+      font-size: 1.1rem; /* Slightly larger text */
+      padding: 0.75rem 0; /* Even bigger touch targets */
+    }
+  }
