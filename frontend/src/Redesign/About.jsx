@@ -32,7 +32,7 @@ export default function About(){
         </p>
 
         <p>Connect with me on <a target="_blank" href="https://www.linkedin.com/in/vennisa-owusu-barfi-95155216b/">Linkedin</a> and <a target="_blank" href="https://bsky.app/profile/vennisabarfi.bsky.social">Bluesky</a></p>
-
+        <br/>
         {/* Here are my socials, Linkedin */}
         
         </div>
